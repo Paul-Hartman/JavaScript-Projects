@@ -13,5 +13,27 @@ Dad</button>
 <button onclick="My_Second_Function()" id='Mom'>Mother</button>
 <button onclick="My_Third_Function()" id='Brother'>Brother</button>
 <button  onclick="My_Fourth_Function()" id='Sister'>Sister</button>
+
+<h1>Canvas</h1>
+<canvas id="myCanvas">Your Browser does not support the canvas tag.</canvas>
+<script>
+ 
+
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext('2d');
+    ctx.fillStyle = 'red';
+    ctx.fillRect(20, 20, 75, 50);
+    ctx.globalAlpha = 0.2;
+     ctx.fillStyle = 'green';
+     ctx.fillRect(50, 50, 75, 50);
+     ctx.fillStyle = 'blue';
+    ctx.fillRect(80, 80, 75, 50);
+
+        document.getElementById("myCanvas").addEventListener("onmouseover", myFunction);
+
+            function myFunction() {
+                document.getElementById("myCanvas").ctx.fillStyle = "yellow";
+            }
+</script>
 </body>
 </html>
