@@ -13,5 +13,15 @@
     <p onmouseover= 'My_First_Function()' id="Green_Text">Words Words</p>
 
     <p id="Concactenate" onmousemove='myFunction()'> Move to see</p>
+
+    <p>
+        <label>Feet</label>
+        <input type="number" name="Feet" id="inputFeet"
+        oninput="feetToMeters(this.value)"
+        onchange="feetToMeters(this.value)">
+    </p>
+    <p>Meters: <span id="outputMeters"></span></p>
+
+    <p id="Math"></p>
 </body>
 </html>
