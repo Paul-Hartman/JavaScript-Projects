@@ -15,3 +15,14 @@ function myFunction() {                 //Defining a function and naming it
     sentence += ' writing code.'; //Concactenating a string with the variable sentence
     document.getElementById('Concactenate').innerHTML = sentence;  //putting the value of sentence into the HTML element with "Concactenate" id
 }
+
+function feetToMeters(valNum) {  //Defining a function with a input of a number 
+    document.getElementById('outputMeters').innerHTML = valNum / 3.2808; //puttin the value of the input with an expression done to it into the HTML
+                                                        // element with id 'outputMeters'
+
+}
+
+function addition_Function() {
+    var addition = 2 + 2;
+    document.getElementById('Math').innerHTML = '2 + 2 = ' + addition;
+}
