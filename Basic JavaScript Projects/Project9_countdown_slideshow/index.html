@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/main.js"></script>
+    <link rel="stylesheet" href="CSS/main.css" type="text/css">
+</head>
+<body>
+    <p> How many seconds would you like to set an alarm for?</p>
+    <input type="number" placeholder="Seconds:" id="seconds">
+    <button onclick="countdown()">Set Timer</button>
+    <p id="timer"></p>
+
+    
+<!--Slideshow container-->
+    <div class="slideshow-container">
+
+        <!--Full-width images with number and caption text-->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="./images/bismuth.jpg" alt="Woops" width="500px" height="500px">
+            <div class="text">Bismuth</div>
+        </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="./images/geode.jpg" alt="Woops"  width="500px" height="500px">
+        <div class="text">Geode</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="./images/metalic.jpg" alt="Woops"  width="500px" height="500px">
+        <div class="text">Metal</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="./images/purple.jpg" alt="Woops"  width="500px" height="500px">
+        <div class="text">Amathyst</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="./images/Quartz,_Tibet.jpg" alt="Woops"  width="500px" height="500px">
+        <div class="text">Quartz</div>
+    </div>
+
+    <!--Next and previous buttons-->
+    <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+    <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+
+    </div>
+    <br>
+
+    <!--the dots/Circles-->
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+</body>
+</html>
