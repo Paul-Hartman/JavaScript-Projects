@@ -1,0 +1,28 @@
+        input {
+            width: 100%;
+            border: 5px double plum;
+            border-radius: 10px;
+            padding: 5px 10px; 
+            margin: 5px 5px;}
+
+        #submit {
+            background-color: pink;
+            color: white;
+        }
+
+        #submit:hover {
+            background-color: plum;
+            color: powderblue;
+            cursor: pointer;
+        }
+
+        label {
+            margin: 10px;
+            color: powderblue;
+            text-shadow:gray 1px 1px;
+        }
+
+        p{
+            color: powderblue;
+            text-shadow:gray 1px 1px;
+        }
