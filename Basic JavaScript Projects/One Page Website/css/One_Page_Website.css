@@ -4,6 +4,7 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
+    scroll-behavior: smooth;
 
 }
 
@@ -35,7 +36,9 @@ h1  {
     text-align: center;
     color: red;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    
 }
+
 
 h1::after { /*underline*/
     display: block;
@@ -45,8 +48,10 @@ h1::after { /*underline*/
     background: red;
     margin: 5px auto 40px;
     box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
-    
 }
+
+
+
 h2 {
     line-height: 50px;
     color: red;
@@ -566,3 +571,53 @@ MENU SELECTION ANIMATION
     transform: scale(1.1);
 }
 
+/*Popup form*/
+
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+
+}
+
+
+.form-container input[type=radio] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background-color: blue;
+    text-align: center;
+}
+
+.form-container
+input[type=radio]:focus {
+    background-color: darkblue;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: white;
+    color: red;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.form-container .btn:hover, {
+    opacity: 1;
+}
