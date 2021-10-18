@@ -38,4 +38,21 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
+function validateForm() {
+    let fname = document.forms['myForm']['fname'].value;
+    let lname = document.forms['myForm']['lname'].value;
+    let email = document.forms['myForm']['email'].value;
+    let pnum = document.forms['myForm']['pnum'].value;
+    if (fname == "" || lname == "" || email=="" || pnum == "") {
+        alert('Please fill out the contact form in full.')
+        return false;
+        }
+}
 
+function openForm() {
+    document.getElementById("popForm").style.display = 'block';
+}
+
+function closeForm() {
+    document.getElementById("popForm").style.display = 'none';
+}
