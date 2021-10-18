@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="XML_Example"></p>
+    <script>
+        var XML_Parser, XML_Document;
+
+        //creates a text string
+        var Animal = "<animal>" +
+            "<class>Mammal</class>"+
+            "<species>Dog</species>"+
+            "<name>Roofus</name>"+
+            "<breed>Corgi</breed>"
+            "</movie>";
+
+        //creates an XML DOM parser
+        XML_Parser= new DOMParser();
+
+        //creates a new XML DOM object using the text string
+        XML_Document = XML_Parser.parseFromString(Animal,"text/xml");
+        
+        document.getElementById("XML_Example").innerHTML = 
+        XML_Document.getElementsByTagName('species')[0].childNodes[0].nodeValue;
+
+
+    </script>
+</body>
+</html>
