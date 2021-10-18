@@ -1,0 +1,68 @@
+    .square {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: mymove 5s infinite;
+        border-radius: 70px 0 50px 0;
+    }
+
+    @keyframes mymove {
+        0% {
+            top: 0px;
+            left: 500px;
+            background: lightblue;
+        }
+
+        25% {
+            top: 0px;
+            left: 50px;
+            background: pink;
+        }
+
+        50% {
+            top: 200px;
+            left: 10px;
+            background: plum;
+        }
+
+        75% {
+            top: 100px;
+            left: 0px;
+            background: cyan;
+        }
+
+        100% {
+            top: 0px;
+            left: 500px;
+            background: magenta;
+        }
+    }
+
+.img { 
+    animation:zoominoutsinglefeatured 15s forwards ;
+
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+
+    50% {
+        transform: scale(1.9,1.9);
+    }
+
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background: magenta;
+    padding: 50px;
+    font-size: 50px;
+}
